@@ -1,45 +1,52 @@
 # fiap-pos-ia-tech-challenge-fase-1
 fiap-pos-ia-tech-challenge-fase-1
 
-# 🏥 Tech Challenge – Fase 1 | IA para Suporte ao Diagnóstico Clínico
+# 🏥 Tech Challenge – Fase 1 | Sistema Inteligente de Apoio ao Diagnóstico de Diabetes
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-success)
-![FIAP](https://img.shields.io/badge/FIAP-Tech%20Challenge-red)
+> Projeto desenvolvido para o **Tech Challenge – Fase 1** da Pós-Graduação em Inteligência Artificial da **FIAP**, aplicando técnicas de Ciência de Dados e Machine Learning para apoio ao diagnóstico clínico.
 
 ---
 
-## 📖 Sobre o Projeto
+# 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido como parte do **Tech Challenge – Fase 1** da Pós-Graduação em **Inteligência Artificial da FIAP**.
+O crescimento do volume de exames e prontuários eletrônicos torna cada vez mais importante o uso de sistemas inteligentes capazes de auxiliar profissionais da saúde na tomada de decisão.
 
-O desafio consiste em desenvolver a base de um sistema inteligente capaz de apoiar o diagnóstico clínico por meio da análise de dados utilizando técnicas de **Ciência de Dados**, **Machine Learning** e **Inteligência Artificial**.
+Neste contexto, este projeto desenvolve uma solução de **Machine Learning** para apoiar a identificação de pacientes com possível diabetes a partir de informações clínicas estruturadas.
 
-Nesta primeira fase, o projeto está concentrado na realização de uma **Análise Exploratória de Dados (EDA)** sobre o **Pima Indians Diabetes Dataset**, buscando compreender a estrutura dos dados, avaliar sua qualidade e identificar padrões que servirão de base para as etapas de pré-processamento e modelagem.
+Todo o desenvolvimento segue um fluxo completo de Ciência de Dados, desde a compreensão do problema até a avaliação crítica dos modelos treinados.
 
 ---
 
 # 🎯 Objetivos
 
+O projeto possui os seguintes objetivos:
+
+- Compreender o problema de negócio proposto pela FIAP;
 - Realizar uma Análise Exploratória de Dados (EDA);
-- Compreender a estrutura e qualidade do conjunto de dados;
-- Identificar inconsistências e possíveis problemas nos dados;
-- Analisar a distribuição das variáveis clínicas;
-- Avaliar relações entre os atributos e o diagnóstico de diabetes;
-- Preparar o dataset para as próximas etapas de Machine Learning.
+- Avaliar a qualidade do conjunto de dados;
+- Identificar inconsistências e valores inválidos;
+- Realizar o pré-processamento dos dados;
+- Construir um Pipeline de Machine Learning;
+- Treinar e comparar diferentes algoritmos de classificação;
+- Avaliar os modelos utilizando métricas adequadas ao contexto médico;
+- Interpretar os resultados obtidos;
+- Discutir limitações e possibilidades de evolução do projeto.
 
 ---
 
 # 🩺 Dataset
 
-Foi utilizado o **Pima Indians Diabetes Dataset**, amplamente empregado em estudos de classificação na área da saúde.
+Foi utilizado o **Pima Indians Diabetes Dataset**, amplamente empregado em pesquisas e estudos sobre classificação de diabetes.
 
 ### Características
 
-- **768 registros**
-- **9 variáveis**
-- Problema de **Classificação Binária**
+| Item | Valor |
+|------|------:|
+| Registros | 768 |
+| Variáveis | 9 |
+| Tipo do problema | Classificação Binária |
+
+### Variáveis
 
 | Variável | Descrição |
 |----------|-----------|
@@ -49,38 +56,15 @@ Foi utilizado o **Pima Indians Diabetes Dataset**, amplamente empregado em estud
 | SkinThickness | Espessura da dobra cutânea |
 | Insulin | Nível de insulina |
 | BMI | Índice de Massa Corporal |
-| DiabetesPedigreeFunction | Histórico familiar de diabetes |
+| DiabetesPedigreeFunction | Histórico familiar |
 | Age | Idade |
 | Outcome | Diagnóstico (0 = Não diabético / 1 = Diabético) |
 
 ---
 
-# 📊 Etapas Desenvolvidas
-
-Atualmente o notebook contempla:
-
-- ✔ Importação das bibliotecas
-- ✔ Carregamento do dataset
-- ✔ Exploração inicial dos dados
-- ✔ Verificação dos tipos de dados
-- ✔ Estatísticas descritivas
-- ✔ Análise da integridade dos dados
-- ✔ Distribuição da variável alvo
-- ✔ Distribuição das variáveis
-- ✔ Análise de assimetria
-- ✔ Análise de curtose
-- ✔ Detecção de outliers
-- ✔ Correlação entre variáveis
-- ✔ Correlação com a variável alvo
-- ✔ Comparação entre pacientes diabéticos e não diabéticos
-- ✔ Investigação de valores iguais a zero
-- ✔ Conclusões da Análise Exploratória
-
----
-
 # 🔬 Metodologia
 
-O desenvolvimento segue a metodologia **CRISP-DM**, composta pelas etapas:
+O projeto foi desenvolvido seguindo o processo **CRISP-DM**, composto pelas seguintes etapas:
 
 - Entendimento do problema
 - Entendimento dos dados
@@ -88,9 +72,89 @@ O desenvolvimento segue a metodologia **CRISP-DM**, composta pelas etapas:
 - Modelagem
 - Avaliação
 
-Durante as próximas fases do projeto, serão desenvolvidos modelos supervisionados de classificação para apoio ao diagnóstico clínico.
+Durante o desenvolvimento foram aplicadas boas práticas de Ciência de Dados, incluindo:
 
-Como se trata de um problema médico, será dada maior atenção ao **Recall**, buscando minimizar falsos negativos, que representam pacientes doentes classificados incorretamente como saudáveis.
+- análise exploratória dos dados;
+- identificação de inconsistências;
+- tratamento de valores iguais a zero;
+- imputação utilizando Pipeline;
+- prevenção de Data Leakage;
+- divisão estratificada entre treino e teste;
+- validação cruzada;
+- comparação entre diferentes algoritmos.
+
+---
+
+# 📊 Etapas Desenvolvidas
+
+O notebook contempla:
+
+- ✅ Entendimento do problema
+- ✅ Carregamento e inspeção dos dados
+- ✅ Estatística descritiva
+- ✅ Análise Exploratória (EDA)
+- ✅ Identificação de valores inconsistentes
+- ✅ Tratamento dos dados
+- ✅ Nova EDA após tratamento
+- ✅ Pipeline de pré-processamento
+- ✅ Treinamento dos modelos
+- ✅ Avaliação das métricas
+- ✅ Comparação entre modelos
+- ✅ Validação Cruzada
+- ✅ Feature Importance
+- ✅ Discussão crítica
+- ✅ Limitações do estudo
+- ✅ Conclusão
+
+---
+
+# 🤖 Modelos Avaliados
+
+Foram treinados três algoritmos supervisionados:
+
+- Regressão Logística
+- Árvore de Decisão
+- Random Forest
+
+---
+
+# 📈 Resultados
+
+O **Random Forest** apresentou o melhor equilíbrio entre desempenho e capacidade discriminativa.
+
+### Métricas obtidas
+
+| Métrica | Valor |
+|---------|------:|
+| Accuracy | **73,38%** |
+| Precision | **60,00%** |
+| Recall | **72,22%** |
+| F1-score | **65,55%** |
+| ROC-AUC | **82,31%** |
+
+### Validação Cruzada
+
+| Métrica | Média |
+|---------|------:|
+| Accuracy | **75,90%** |
+| Precision | **63,71%** |
+| Recall | **73,52%** |
+| F1-score | **68,11%** |
+| ROC-AUC | **83,48%** |
+
+Como o problema está relacionado ao apoio ao diagnóstico médico, a métrica de maior interesse foi o **Recall**, pois reduz a probabilidade de pacientes com diabetes serem classificados incorretamente como saudáveis.
+
+---
+
+# 📌 Principais Descobertas
+
+Durante a análise foram identificados diversos pontos relevantes:
+
+- presença de valores iguais a zero em variáveis fisiológicas;
+- necessidade de imputação dos dados;
+- forte influência da variável **Glucose** na classificação;
+- importância de variáveis como BMI, Age e DiabetesPedigreeFunction;
+- necessidade de avaliar o modelo além da Accuracy.
 
 ---
 
@@ -109,72 +173,75 @@ Como se trata de um problema médico, será dada maior atenção ao **Recall**, 
 
 # 📁 Estrutura do Projeto
 
-```text
-tech-challenge-fiap/
+```
+fiap-pos-ia-tech-challenge-fase-1/
 
-│
 ├── notebooks/
-│   └── EDA_Diabetes.ipynb
+│   └── 01_Desafio_FIAP_IA.ipynb
 │
 ├── images/
 │
 ├── requirements.txt
-│
-└── README.md
+├── Dockerfile
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 # 🚀 Como Executar
 
-### 1. Clone este repositório
+## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seuusuario/tech-challenge-fiap.git
+git clone https://github.com/SEU-USUARIO/fiap-pos-ia-tech-challenge-fase-1.git
 ```
 
-### 2. Acesse a pasta do projeto
+## 2. Acessar a pasta
 
 ```bash
-cd tech-challenge-fiap
+cd fiap-pos-ia-tech-challenge-fase-1
 ```
 
-### 3. Instale as dependências
+## 3. Instalar as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Abra o Jupyter Notebook
+## 4. Executar o notebook
 
-```bash
-jupyter notebook
+Abra o Jupyter Notebook ou Google Colab e execute o arquivo:
+
 ```
-
-ou
-
-```bash
-jupyter lab
+01_Desafio_FIAP_IA.ipynb
 ```
-
-### 5. Execute o notebook
-
-Abra o arquivo **EDA_Diabetes.ipynb** e execute as células sequencialmente para reproduzir toda a análise exploratória.
 
 ---
 
-# 📈 Próximas Etapas
+# ⚠️ Limitações
 
-Após a conclusão da EDA, serão desenvolvidas as seguintes etapas:
+Este estudo apresenta algumas limitações:
 
-- Pré-processamento dos dados
-- Engenharia de atributos
-- Construção do Pipeline de Machine Learning
-- Treinamento dos modelos
-- Avaliação utilizando métricas de classificação
-- Interpretabilidade dos modelos com SHAP
-- Comparação entre algoritmos
-- Conclusões finais
+- conjunto de dados relativamente pequeno;
+- dados provenientes de uma população específica;
+- presença de dados ausentes tratados por imputação;
+- ausência de validação em bases externas.
+
+Portanto, o modelo deve ser interpretado como ferramenta de apoio à decisão clínica e não como substituto da avaliação médica.
+
+---
+
+# 🚀 Trabalhos Futuros
+
+Como evolução deste projeto, podem ser desenvolvidas as seguintes melhorias:
+
+- otimização de hiperparâmetros;
+- utilização de SHAP para interpretabilidade;
+- avaliação de novos algoritmos (XGBoost e LightGBM);
+- validação em bases externas;
+- desenvolvimento de API para integração com sistemas hospitalares;
+- monitoramento do modelo em produção.
 
 ---
 
@@ -191,6 +258,6 @@ Após a conclusão da EDA, serão desenvolvidas as seguintes etapas:
 
 # 👩‍💻 Autora
 
-**Natalia**
+**Natalia da Costa Silva**
 
-Projeto desenvolvido como parte do **Tech Challenge – Fase 1** da Pós-Graduação em Inteligência Artificial da FIAP, aplicando técnicas de Ciência de Dados e Machine Learning para suporte ao diagnóstico clínico.
+Projeto desenvolvido como parte do **Tech Challenge – Fase 1** da Pós-Graduação em Inteligência Artificial da **FIAP**, aplicando técnicas de Ciência de Dados, Engenharia de Machine Learning e Inteligência Artificial para apoio ao diagnóstico clínico.
