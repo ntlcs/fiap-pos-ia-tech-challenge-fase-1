@@ -173,20 +173,15 @@ Durante a análise foram identificados diversos pontos relevantes:
 
 # 📁 Estrutura do Projeto
 
-```
+```text
 fiap-pos-ia-tech-challenge-fase-1/
 
-├── notebooks/
-│   └── 01_Desafio_FIAP_IA.ipynb
-│
-├── images/
-│
+├── 01_Desafio_FIAP_IA.ipynb
+├── README.md
 ├── requirements.txt
 ├── Dockerfile
-├── README.md
 └── .gitignore
 ```
-
 ---
 
 # 🚀 Como Executar
