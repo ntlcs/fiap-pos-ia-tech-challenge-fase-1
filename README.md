@@ -214,6 +214,19 @@ Abra o Jupyter Notebook ou Google Colab e execute o arquivo:
 
 ---
 
+
+# 📄 Relatório Técnico
+
+O relatório técnico completo do projeto, contendo a descrição da metodologia, análise exploratória dos dados, pré-processamento, modelagem, avaliação dos modelos e discussão dos resultados, está disponível no link abaixo:
+
+📑 **Relatório Técnico (Google Docs)**
+
+https://docs.google.com/document/d/1vsQCHuIZOjnCy9FgVbveiFuwZtxRZ2qMP6IjLLLNvuo/edit?usp=sharing
+
+> Recomenda-se acessar o documento utilizando uma conta Google para visualizar a versão mais atualizada.
+
+---
+
 # ⚠️ Limitações
 
 Este estudo apresenta algumas limitações:
