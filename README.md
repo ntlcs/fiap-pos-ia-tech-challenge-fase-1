@@ -295,7 +295,6 @@ fiap-pos-ia-tech-challenge-fase-1/
 ├── 01_Desafio_FIAP_IA.ipynb
 ├── README.md
 ├── requirements.txt
-├── Dockerfile
 └── .gitignore
 ```
 
