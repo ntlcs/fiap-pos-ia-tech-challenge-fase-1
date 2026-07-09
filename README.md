@@ -293,8 +293,10 @@ Os resultados demonstraram comportamento consistente entre diferentes divisões 
 fiap-pos-ia-tech-challenge-fase-1/
 
 ├── 01_Desafio_FIAP_IA.ipynb
+├── Relatório Técnico Final Tech Challenge – Fase 1.pdf
 ├── README.md
 ├── requirements.txt
+├── Dockerfile
 └── .gitignore
 ```
 
