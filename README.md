@@ -339,7 +339,7 @@ O relatório técnico completo encontra-se disponível no Google Docs.
 
 📑 **Relatório Técnico**
 
-https://docs.google.com/document/d/1vsQCHuIZOjnCy9FgVbveiFuwZtxRZ2qMP6IjLLLNvuo/edit?usp=sharing
+https://docs.google.com/document/d/10BqKpLWb66796jTXiwen5AiUDzdpMsm3QuAoaxEK_y4/edit?usp=sharing
 
 O documento apresenta detalhadamente:
 
